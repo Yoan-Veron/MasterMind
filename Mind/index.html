@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Mind</title>
+<link rel="stylesheet" href="css/onsenui.css">
+<link rel="stylesheet" href="css/onsen-css-components.min.css">
+<link rel="stylesheet" href="css/Style.css">
+<script src="js/onsenui.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/couleurs.js"></script>
+<script src="js/Script.js"></script>
+</head>
+
+
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="right" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-list>
+          <!--<ons-list-item onclick="fn.load('accueil.html')" tappable>
+            <i class="fas fa-home"></i>  &nbsp; &nbsp; Accueil
+          </ons-list-item>-->
+          <ons-list-item onclick="fn.load('partie-seul.html')" tappable>
+            <i class="fas fa-flask"></i>  &nbsp; &nbsp; Nouvelle Partie
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('aide.html')" tappable>
+            <i class="fas fa-question"></i>  &nbsp; &nbsp; Aide
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="partie-seul.html"></ons-splitter-content>
+  </ons-splitter>
+
+  <template id="accueil.html">
+    <ons-page id="accueil">
+      <ons-toolbar class ="bandeau">
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <i class="fas fa-ellipsis-v blanc"></i>
+          </ons-toolbar-button>
+       </div>
+       <div class="titre">
+         <i class="fas fa-home"></i>  &nbsp; Mind
+       </div>
+     </ons-toolbar>
+
+    </ons-page>
+  </template>
+
+  <template id="partie-seul.html">
+    <ons-page id="partie-seul">
+      <ons-toolbar class ="bandeau">
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <i class="fas fa-ellipsis-v blanc"></i>
+          </ons-toolbar-button>
+       </div>
+       <div class="titre">
+         <i class="fas fa-flask"></i> &nbsp; Mind
+       </div>
+     </ons-toolbar>
+
+    <div id="solution" class="case"></div>
+    <div id="mind" class="case"> </div>
+
+<ons-bottom-toolbar style=" text-align: center; background-color: #2ecc71; height: 10%;">
+    <ons-button id = "ok" style="margin-top: 1%;">Valider ligne</ons-button>
+</ons-bottom-toolbar>
+    </ons-page>
+  </template>
+
+  <template id="aide.html">
+    <ons-page id="aide">
+      <ons-toolbar class ="bandeau">
+        <div class="right">
+          <ons-toolbar-button onclick="fn.open()">
+            <i class="fas fa-ellipsis-v blanc"></i>
+          </ons-toolbar-button>
+       </div>
+       <div class="titre">
+         <i class="fas fa-question"></i> &nbsp; Mind
+       </div>
+     </ons-toolbar>
+     <div class="center" style="color:grey; text-align: left; margin-left: 1%; ">
+     <p>
+       <b>Le code</b>
+       <br>Un code est g&eacute;n&eacute;r&eacute; automatiquement quand un nouveau joueur
+       commence une nouvelle partie. Le code est une combinaison de une ou plusieurs couleurs.
+       Le but est de retrouver cette combinaison.
+       <br><br><b>Comment jouer</b>
+       <br>Pour choisir les couleurs il vous suffit d'appuyer plusieurs fois sur la case souhaitée.
+       Une fois que vous avez disposé toutes vos couleur, vous appuyez sur valider et le jeu
+       vous dira à quel point vous êtes prêt de trouver le code.
+       <br><br><b>Les indications</b>
+       <br>Une fois que vous avez appuyé sur le bouton valider, des couleurs s'allumeront sur les carrés à cotés.
+       Le vert vous indique que vous avez une bonne couleur à la bonne place.
+       Le jaune vous indique que vous avez une bonne couleur mais à la mauvaise position.
+       <br><br><b>La fin de la partie</b>
+       <br>Une partie se finit lorsque le joueur trouve le code ou qu'il a utilis&eacute; tous ses essais
+     </p>
+   </div>
+   <ons-bottom-toolbar style="background-color: #2ecc71; font-size:15px; text-align: right; color:white; padding-right: 1%; height:10%">
+     <p><i class="fas fa-brain"></i> Mind&reg;
+     <br>&#169;2021 by Yoan V&eacute;ron</p>
+   </ons-bottom-toolbar>
+    </ons-page>
+  </template>
+
+
+</html>

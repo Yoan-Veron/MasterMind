@@ -1,0 +1,44 @@
+.rond {
+border-radius: 40px;
+text-align : center;
+font : bold;
+position : absolute;
+background: grey;
+}
+
+.test{
+  text-align : center;
+  font : bold;
+  position : absolute;
+  background: grey;
+}
+
+.bandeau{
+  background-color: #2ecc71 ;
+}
+
+.blanc{
+  color: white;
+}
+
+.titre{
+  color:white;
+  font-size: 20px;
+  padding-left:2%;
+  padding-top:0.5%;
+  font-weight: bold;
+}
+
+.case{
+  position: relative;
+}
+
+
+b{
+  color:black
+}
+
+p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
